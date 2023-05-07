@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondowallapop"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.8"
+        android:background="@drawable/gradient"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="54dp"
+            android:layout_marginEnd="40dp"
+            android:layout_weight="1"
+            android:text="Login"
+            android:textColor="@color/azul"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginBottom="27dp"
+            android:layout_weight="1"
+            android:text="Already got an acount?"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/button1"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/constraintLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="900px"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/facebook"
+            android:drawableLeft="@drawable/facebookicono"
+            android:text="Continue with facebook"
+            app:cornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.74"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="900px"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/gmail"
+            android:drawableLeft="@drawable/gmailicono"
+            android:text="Continue with google"
+            app:cornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.81"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="900px"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/free"
+            android:text="register free"
+            app:cornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.85"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="414dp"
+            android:layout_height="134dp"
+            android:layout_marginBottom="228dp"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.444"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/wallapop" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
